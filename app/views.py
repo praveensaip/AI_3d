@@ -18,6 +18,7 @@ def upload_image(request):
             result = map_clothing_to_model(uploaded_image.image.path, "model_path_placeholder")
             print("image path", uploaded_image.image.path)
 
+            #demo
             # Return the image and music URLs in the response
             return redirect('fashion_show') 
 
