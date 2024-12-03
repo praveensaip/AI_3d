@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customize Show</title>
+</head>
+<body>
+    <h1>Customize Your Fashion Show</h1>
+    <form method="post" action="/customize_show/">
+        {% csrf_token %}
+        <label for="theme">Theme:</label>
+        <input type="text" name="theme" id="theme" required>
+        <br>
+        <label for="music">Music:</label>
+        <input type="text" name="music" id="music" required>
+        <br>
+        <button type="submit">Save Settings</button>
+    </form>
+</body>
+</html>
